@@ -15,9 +15,7 @@ node with the examples below.
 function postponeWithArgs(cb, delay) {
 
   return function (...args) {
-    setTimeout(() => {
-      cb(...args);
-    }, delay);
+    setTimeout(() => { cb(...args) }, delay);
   };
   //   setTimeout(cb(...args), delay, ...args)
   // }
